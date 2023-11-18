@@ -22,24 +22,55 @@
 			<div class="contactForm">
 				<h2>Contacter moi</h2>
 				<label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required><br>
+    <input type="text" id="nom" name="nom" required><br><br>
 
     <label for="email">E-mail :</label>
-    <input type="email" id="email" name="email" required><br>
+    <input type="email" id="email" name="email" required><br><br>
+	
+	<label>
+        Homme :
+        <input type="radio" name="genre" value="homme" class="genre">
+    </label><br>
+    
+    <label>
+        Femme :
+        <input type="radio" name="genre" value="femme" class="genre">
+    </label><br><br>
+
 
     <label for="raison">Raison de contact :</label>
     <select id="raison" name="raison" required>
         <option value="" disabled selected>Choisissez une raison</option>
-        <option value="question">Question générale</option>
+        <option value="question">Question sur la Physique Quantique</option>
+        <option value="problème">Problème technique</option>
         <option value="commentaire">Commentaire</option>
-        <option value="probleme">Problème technique</option>
         <option value="autre">Autre</option>
-    </select>
+    </select><br><br>
+
+	<form action="traitement.php" method="post">
+		<label for="laisserCommentaire">Voulez-vous laisser un commentaire ?</label>
+		<input type="checkbox" id="laisserCommentaire" name="laisserCommentaire" onchange="afficherCommentaire()"><br><br>
+		
+		<div class="commentaire">
+			<label for="zoneCommentaire">Commentaire :</label>
+			<textarea id="zoneCommentaire" name="zoneCommentaire" rows="4"></textarea><br><br>
+	
+			<label for="note">Note :</label>
+			<select id="note" name="note">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select><br><br>
+		</div>
+		<button type="button" class="btn btn-primary" onclick="posterAvis()">Envoyer le formulaire</button>
+            </form>
 			</div>
 
 			<section class="footer">
 				<div class="row">
-					<a href="#">Une idée ? Un sujet sur lequel ce n'est pas claire ? Contacte moi<span>&#x27f6</span></a>
+					<a href="contact.html">Une idée ? Un sujet sur lequel ce n'est pas claire ? Contacte moi<span>&#x27f6</span></a>
 					<span>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
 						Nemo impedit eaque odit quaerat ullam quidem?

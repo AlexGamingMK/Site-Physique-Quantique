@@ -169,10 +169,6 @@ ul li a:hover::after {
 	color: #000;
 }
 
-h2 {
-	margin-bottom: 50px;
-}
-
 .row a span {
 	font-size: 15px;
 	font-weight: bold;
@@ -195,15 +191,30 @@ h2 {
 	margin-right: 4px;
 }
 
+h2 {
+	margin-bottom: 50px;
+}
+
 
 .contactForm {
+	border-radius: 10px;
 	text-align: center;
 	position: center;
 	bottom: 70%;
 	color: #fff;
+	background-image: url(images/image-formContact.jpg);
+	margin-left: 35%;
+	height: 50vh;
+	width: 50vh;
+	background-size: cover;
+	background-position: center;
 }
 
 .contactForm p {
 	font-size: 50px;
 	font-weight: bold;
+}
+
+label input select{
+	margin-bottom: 20px;
 }
