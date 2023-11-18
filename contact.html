@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="nav" href="">
-		<title>Contact</title>
-	</head>
-	<body>
-		<div class="container">
-			<nav>
-				<img src="images/logo.png" alt="" class="logo"/>
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="details.html">La Physique Quantique ?</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
 
-			<div class="contactForm">
-				<h2>Contacter moi</h2>
-				<label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required><br><br>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="nav" href="">
+	<title>Contact</title>
+</head>
 
-    <label for="email">E-mail :</label>
-    <input type="email" id="email" name="email" required><br><br>
-	
-	<label>
-        Homme :
-        <input type="radio" name="genre" value="homme" class="genre">
-    </label><br>
-    
-    <label>
-        Femme :
-        <input type="radio" name="genre" value="femme" class="genre">
-    </label><br><br>
+<body>
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" alt="" class="logo" />
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="details.html">La Physique Quantique ?</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="contactForm">
+			<h2>Contacter moi</h2>
+			<label for="nom">Nom :</label>
+			<input type="text" id="nom" name="nom" required><br><br>
+
+			<label for="email">E-mail :</label>
+			<input type="email" id="email" name="email" required><br><br>
+
+			<label>
+				Homme :
+				<input type="radio" name="genre" value="homme" class="genre">
+			</label><br>
+
+			<label>
+				Femme :
+				<input type="radio" name="genre" value="femme" class="genre">
+			</label><br><br>
 
 
-    <label for="raison">Raison de contact :</label>
-    <select id="raison" name="raison" required>
-        <option value="" disabled selected>Choisissez une raison</option>
-        <option value="question">Question sur la Physique Quantique</option>
-        <option value="problème">Problème technique</option>
-        <option value="commentaire">Commentaire</option>
-        <option value="autre">Autre</option>
-    </select><br><br>
-
-	<form action="traitement.php" method="post">
-		<label for="laisserCommentaire">Voulez-vous laisser un commentaire ?</label>
-		<input type="checkbox" id="laisserCommentaire" name="laisserCommentaire" onchange="afficherCommentaire()"><br><br>
-		
-		<div class="commentaire">
-			<label for="zoneCommentaire">Commentaire :</label>
-			<textarea id="zoneCommentaire" name="zoneCommentaire" rows="4"></textarea><br><br>
-	
-			<label for="note">Note :</label>
-			<select id="note" name="note">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
+			<label for="raison">Raison de contact :</label>
+			<select id="raison" name="raison" required>
+				<option value="" disabled selected>Choisissez une raison</option>
+				<option value="question">Question sur la Physique Quantique</option>
+				<option value="problème">Problème technique</option>
+				<option value="commentaire">Commentaire</option>
+				<option value="autre">Autre</option>
 			</select><br><br>
-		</div>
-		<button type="button" class="btn btn-primary" onclick="posterAvis()">Envoyer le formulaire</button>
-            </form>
+
+
+			<div class="commentaire">
+				<label for="zoneCommentaire">Commentaire :</label>
+				<textarea id="zoneCommentaire" name="zoneCommentaire" rows="4"></textarea><br><br>
+
+				<label for="note">Note :</label>
+				<select id="note" name="note">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select><br><br>
 			</div>
 
-			<section class="footer">
-				<div class="row">
-					<a href="contact.html">Une idée ? Un sujet sur lequel ce n'est pas claire ? Contacte moi<span>&#x27f6</span></a>
-					<span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
-						Nemo impedit eaque odit quaerat ullam quidem?
-					</span>
-				</div>
-			</section>
+			<label>
+				<input type="checkbox" id="accepterConditions" name="accepterConditions">
+				J'accepte les Conditions d'utilisation
+			</label><br><br>
 
-            <section class="social-icons">
-                <a href="#"><img src="images/x-fill.png" alt=""></a>
-                <a href="#"><img src="images/instagram-fill.png" alt=""></a>
-            </section>
+			<button type="button" class="btn btn-primary" onclick="posterAvis()">Envoyer le formulaire</button>
+
+			</form>
 		</div>
-	</body>
+
+		<section class="footer">
+			<div class="row">
+				<a href="con">Une idée ? Un sujet sur lequel ce n'est pas claire ? Contacte moi<span>&#x27f6</span></a>
+				<span>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+					Nemo impedit eaque odit quaerat ullam quidem?
+				</span>
+			</div>
+		</section>
+
+		<section class="social-icons">
+			<a href="#"><img src="images/x-fill.png" alt=""></a>
+			<a href="#"><img src="images/instagram-fill.png" alt=""></a>
+		</section>
+	</div>
+</body>
+
 </html>
