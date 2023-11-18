@@ -169,6 +169,10 @@ ul li a:hover::after {
 	color: #000;
 }
 
+h2 {
+	margin-bottom: 50px;
+}
+
 .row a span {
 	font-size: 15px;
 	font-weight: bold;
@@ -189,4 +193,17 @@ ul li a:hover::after {
 .social-icons a {
 	padding: 5px;
 	margin-right: 4px;
+}
+
+
+.contactForm {
+	text-align: center;
+	position: center;
+	bottom: 70%;
+	color: #fff;
+}
+
+.contactForm p {
+	font-size: 50px;
+	font-weight: bold;
 }
