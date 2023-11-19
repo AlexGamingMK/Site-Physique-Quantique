@@ -12,7 +12,7 @@
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('images/fond_ecran.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../images/fond_ecran.png');
 	background-size: cover;
 	background-position: center;
 	padding: 0 8%;
@@ -91,7 +91,7 @@ ul li a:hover::after {
 	margin-left: -10px;
 	color: transparent;
 	-webkit-text-stroke: 1px white;
-	background: url('images/pattern.png');
+	background: url('../images/pattern.png');
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-position: 0 0;
@@ -115,7 +115,7 @@ ul li a:hover::after {
 	margin-left: -10px;
 	color: transparent;
 	-webkit-text-stroke: 1px white;
-	background: url('images/pattern.png');
+	background: url('../images/pattern.png');
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-position: 0 0;
@@ -133,6 +133,7 @@ ul li a:hover::after {
 	flex-wrap: wrap;
 	margin-top: 40px;
 }
+
 
 @keyframes animate {
 	100% {
@@ -202,7 +203,7 @@ h2 {
 	position: center;
 	bottom: 70%;
 	color: #fff;
-	background-image: url(images/image-formContact.jpg);
+	background-image: url(../images/image-formContact.jpg);
 	margin-left: 35%;
 	height: 50vh;
 	width: 50vh;
