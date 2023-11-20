@@ -203,7 +203,7 @@ h2 {
 	text-align: center;
 	position: center;
 	bottom: 70%;
-	color: #fff;
+	color: #ffffff;
 	background-image: url(../images/image-formContact.jpg);
 	margin-left: 35%;
 	height: 50vh;
@@ -218,7 +218,6 @@ h2 {
 }
 
 label input select{
-
 	margin-bottom: 20px;
 }
 
